@@ -1,1 +1,2 @@
-Devise.secret_key = "0c869f05125e8286fe15865e134d1f8d92153d96aab80f75c89ab872f3e029a094cd8df498367764c37f4fbabf111636ca86"
+# Configuration du secret_key de Devise
+Devise.secret_key = YAML.load(File.open("#{Rails.root}/config/secrets.yml"))[Rails.env]['secret_key']
