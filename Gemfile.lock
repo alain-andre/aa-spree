@@ -1,26 +1,13 @@
 GIT
-  remote: git://github.com/spree/spree_i18n.git
-  revision: 37fe17381a866fe35208d873b239e73b9aad0ca5
+  remote: git://github.com/alain-andre/spree_bootstrap_frontend.git
+  revision: 54c0f93df05475fe1cf71e76774b5a625a3d84b3
   branch: 2-3-stable
   specs:
-    spree_i18n (3.0.0)
-      globalize (~> 4.0.2)
-      i18n_data (~> 0.5.1)
-      rails-i18n (~> 4.0.1)
+    spree_bootstrap_frontend (2.3.0)
+      bootstrap-kaminari-views (~> 0.0.3)
+      bootstrap-sass (~> 3.2.0)
       spree_core (~> 2.3.0)
-
-GIT
-  remote: git://github.com/spree/spree_auth_devise.git
-  revision: 0be5116695a740be8c16686dd512f9405264379d
-  branch: 2-3-stable
-  specs:
-    spree_auth_devise (2.2.0)
-      cancan (~> 1.6.10)
-      devise (~> 3.2.3)
-      devise-encryptable (= 0.1.2)
-      json
-      multi_json
-      spree_core (~> 2.3.0)
+      spree_frontend (~> 2.3.0)
 
 GIT
   remote: git://github.com/spree/spree.git
@@ -77,6 +64,30 @@ GIT
     spree_sample (2.3.3.beta)
       spree_core (= 2.3.3.beta)
 
+GIT
+  remote: git://github.com/spree/spree_auth_devise.git
+  revision: 0be5116695a740be8c16686dd512f9405264379d
+  branch: 2-3-stable
+  specs:
+    spree_auth_devise (2.2.0)
+      cancan (~> 1.6.10)
+      devise (~> 3.2.3)
+      devise-encryptable (= 0.1.2)
+      json
+      multi_json
+      spree_core (~> 2.3.0)
+
+GIT
+  remote: git://github.com/spree/spree_i18n.git
+  revision: 37fe17381a866fe35208d873b239e73b9aad0ca5
+  branch: 2-3-stable
+  specs:
+    spree_i18n (3.0.0)
+      globalize (~> 4.0.2)
+      i18n_data (~> 0.5.1)
+      rails-i18n (~> 4.0.1)
+      spree_core (~> 2.3.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -127,6 +138,11 @@ GEM
       nokogiri (>= 1.4.4)
       uuidtools (~> 2.1)
     bcrypt (3.1.7)
+    bootstrap-kaminari-views (0.0.5)
+      kaminari (>= 0.13)
+      rails (>= 3.1)
+    bootstrap-sass (3.2.0.2)
+      sass (~> 3.2)
     builder (3.2.2)
     cancan (1.6.10)
     cancancan (1.8.4)
@@ -302,6 +318,7 @@ DEPENDENCIES
   sdoc (~> 0.4.0)
   spree!
   spree_auth_devise!
+  spree_bootstrap_frontend!
   spree_i18n!
   spring
   sqlite3

@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ruby '2.1.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.5'
@@ -41,3 +41,4 @@ gem 'spring',        group: :development
 gem 'spree', github: 'spree/spree', branch: '2-3-stable'
 gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: '2-3-stable'
 gem 'spree_i18n', github: 'spree/spree_i18n', branch: '2-3-stable'
+gem 'spree_bootstrap_frontend', github: 'alain-andre/spree_bootstrap_frontend', branch: '2-3-stable'
